@@ -8,7 +8,7 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: #081C15;
-    background-color: #ade6ff;
+    background: #ade6ff;
 }
 
 header {
@@ -134,23 +134,23 @@ footer {
 }
 
 .index-color {
-    background-color:#beeddd;
+    background:#beeddd;
 }
 
 .about-color {
-    background-color:#9ae9ec;
+    background:#9ae9ec;
 }
 
 .stories-color {
-    background-color:#ffcfcf;
+    background:#ffcfcf;
 }
 
 .involved-color {
-    background-color:#b7eedb;
+    background:#b7eedb;
 }
 
 .contact-color {
-    background-color:#5cb6cd;
+    background:#5cb6cd;
 }
 
 .about-container {
@@ -298,7 +298,7 @@ footer {
 }
 
 .contact-button {
-    background: #2EB67D;
+    background: #cd1818;
     color: white;
     border: none;
     padding: 15px;
