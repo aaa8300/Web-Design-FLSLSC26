@@ -133,6 +133,10 @@ footer {
     text-align: center;
 }
 
+.container{
+    width: 100%;
+}
+
 .index-color {
     background:#beeddd;
 }
