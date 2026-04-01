@@ -8,7 +8,7 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: #081C15;
-    background-color: #F1FAEE;
+    background-color: #ade6ff;
 }
 
 header {
@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 4px solid #FF8A5B;
+    border-bottom: 4px solid #ff5252;
 }
 
 header .brand {
@@ -72,14 +72,14 @@ main {
     background: #ddd;
     border-radius: 12px;
     /* padding: 60px 20px; */
-    border: 2px dashed #999;
+    border: 2px dashed #83d693;
     img {
         border-radius: 12px;
     }
 }
 
 .btn {
-    background: #FF8A5B;
+    background: #70c058;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -162,7 +162,7 @@ footer {
 
 .victory-image {
     flex: 1;
-    max-height: 400px;
+    max-height: 600px;
 }
 
 .victory-image img {
