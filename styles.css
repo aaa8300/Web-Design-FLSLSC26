@@ -27,9 +27,9 @@ header .brand {
 }
 
 header .brand img {
-    width: 80px;
+    width: auto;
     height: auto;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 nav ul {
@@ -71,8 +71,11 @@ main {
 .hero-image-placeholder {
     background: #ddd;
     border-radius: 12px;
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
     border: 2px dashed #999;
+    img {
+        border-radius: 12px;
+    }
 }
 
 .btn {
@@ -131,7 +134,7 @@ footer {
 .infographic-placeholder {
     background: #ddd;
     border-radius: 12px;
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
     border: 2px dashed #999;
     margin-top: 2rem;
 }
@@ -199,7 +202,7 @@ footer {
 .help-image-placeholder {
     background: #ddd;
     border-radius: 12px;
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
     border: 2px dashed #999;
     margin-top: 10px;
 }
