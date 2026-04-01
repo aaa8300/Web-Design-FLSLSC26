@@ -124,6 +124,10 @@ footer {
     margin-top: 4rem;
 }
 
+.contact-class{
+    text-align: center;
+}
+
 .about-container {
     display: flex;
     gap: 20px;
