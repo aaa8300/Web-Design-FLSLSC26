@@ -194,9 +194,22 @@ footer {
 
 .help-card {
     background: white;
-    padding: 2rem;
+    padding: 0;
     border-radius: 8px;
+    overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.help-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.help-card h3,
+.help-card p {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 .help-image-placeholder {
