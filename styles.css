@@ -152,10 +152,8 @@ footer {
     left: 50%;
     right: 50%;
     width: 100vw;
-    max-width: 100vw;
     margin-left: -50vw;
     margin-right: -50vw;
-    overflow: hidden;
 }
 
 .index-color {
