@@ -136,12 +136,18 @@ footer {
     background: #ddd;
     border-radius: 12px;
     /* padding: 60px 20px; */
-    border: 2px dashed #999;
+    border: 2px dashed #ddd;
     margin-top: 2rem;
+    overflow: hidden;
 }
-.infographic-placeholder img{
+
+.infographic-placeholder img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
+
 .victories-section {
     max-width: 1200px;
     margin: 2rem auto;
