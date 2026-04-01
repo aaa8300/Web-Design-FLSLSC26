@@ -27,7 +27,7 @@ header .brand {
 }
 
 header .brand img {
-    width: auto;
+    width: 80px;
     height: auto;
     border-radius: 50px;
 }
