@@ -98,6 +98,7 @@ main > section {
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
+    align-items: center;
 }
 
 .crisis-section {
@@ -106,6 +107,12 @@ main > section {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     margin-top: 3rem;
+    text-align: center;
+}
+
+.crisis-section .btn {
+    margin: 0 auto;
+    display: inline-block;
 }
 
 .crisis-section h2 {
@@ -399,7 +406,7 @@ footer {
     }
 
     .help-section {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .hero-image-placeholder,
@@ -409,6 +416,52 @@ footer {
         width: 100%;
         max-width: 100%;
         height: auto;
+    }
+}
+
+.animate-on-scroll, .popup {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeUp 0.6s ease forwards;
+}
+
+.popup.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: popIn 0.35s ease forwards;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 640px) {
+    .help-section {
+        flex-direction: column;
     }
 }
 

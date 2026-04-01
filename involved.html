@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Involved | Coral Coast Turtle Rescue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/CoralCoastTurtleRescue1.jpg">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/CoralCoastTurtleRescue1.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="stories.html">Success Stories</a></li>
+                <li><a href="involved.html">Get Involved</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="victories-title">The Ocean Needs YOU - Right Now</h1>
+        <p>Sea turtles cannot call their senators. They cannot organize beach cleanups. They cannot donate to their own rescue. But <em>you</em> can — and what you do today directly determines whether future generations will ever see a sea turtle glide through Florida's waters. The stakes are real. The need is urgent. And every single contribution matters.</p>
+        <p>Whether you have an hour, a dollar, or a voice — there is a place for you at Coral Coast Turtle Rescue. Join thousands of South Floridians who have decided that these ancient animals are worth fighting for.</p>
+
+        <section class="help-section animate-on-scroll">
+            <div class="help-card popup popup">
+                <img src="images/involve-rescue.jpg" alt="Rescue Team">
+                <h3>Report a Turtle in Distress</h3>
+                <p>See an injured or stranded sea turtle? Every second counts. Call our 24/7 rescue hotline at <strong>888-111-1234</strong> or use our contact form below. Do not try to move the turtle yourself — let our trained team take it from there.</p>
+            </div>
+            <div class="help-card popup">
+                <img src="images/turtle life cyle.jpg" alt="Turtle Life Cycle">
+                <h3>Volunteer With Our Team</h3>
+                <p>Join our beach patrol teams, help monitor nesting sites, assist with weekend coastal cleanups, or support daily care at our rehabilitation facility. No experience necessary — just heart. We train everyone who shows up ready to help.</p>
+            </div>
+            <div class="help-card popup">
+                <img src="images/involve-volunteer.jpg" alt="Volunteer">
+                <h3>Donate to the Mission</h3>
+                <p>Your donation funds the medical resins that repair shattered shells, the specialized diets that bring weakened turtles back to health, and the Bycatch Reduction Devices (BRDs) we provide free of charge to local fishermen. Every dollar goes directly to the turtles.</p>
+            </div>
+        </section>
+
+        <div class="crisis-section">
+            <h3>Ready to Make a Difference?</h3>
+            <p>Hundreds of volunteers have already joined Coral Coast Turtle Rescue. They are teachers, retirees, college students, fishermen, and families. They are united by one belief: these turtles deserve a future.</p>
+            <a href="contact.html" class="btn">Contact Us at 888-111-1234 to Get Started</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Coral Coast Turtle Rescue. Saving South Florida's Coastlines.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            document.querySelectorAll('.animate-on-scroll, .popup').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
