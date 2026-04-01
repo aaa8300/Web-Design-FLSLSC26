@@ -69,10 +69,10 @@ main {
 }
 
 .hero-image-placeholder {
-    background: #ddd;
+    background: #ade6ff;
     border-radius: 12px;
     /* padding: 60px 20px; */
-    border: 2px dashed #83d693;
+    border: 1px dashed #83d693;
     img {
         object-fit: cover;
         border-radius: 12px;
