@@ -135,6 +135,18 @@ footer {
 
 .container{
     width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.index-color,
+.about-color,
+.stories-color,
+.involved-color,
+.contact-color {
+    border: 0;
+    box-shadow: none;
+    padding: 1.5rem 0;
 }
 
 .index-color {
@@ -729,7 +741,7 @@ footer {
 
 .btn-submit {
     width: 100%;
-    background: var(--green-dark);
+    background: rgb(240, 255, 143);
     color: var(--white);
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 1rem;
