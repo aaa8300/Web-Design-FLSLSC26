@@ -265,17 +265,24 @@ footer {
 
 .help-section {
     display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin-top: 1.2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .help-card {
+    flex: 1 1 calc(33.33% - 0.67rem);
+    min-width: 260px;
     background: white;
-    padding: 0;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.help-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 14px rgba(0,0,0,0.12);
 }
 
 .help-card img {
@@ -299,14 +306,19 @@ footer {
     margin-top: 10px;
 }
 
+.contact-form-container,
+.contact-form-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    padding: 1.75rem;
+    max-width: 700px;
+    margin: 1.2rem auto;
+    width: 100%;
+}
+
 .contact-form-container {
     flex: 1;
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    max-width: 600px;
-    margin: auto;
 }
 
 .contact-form {
