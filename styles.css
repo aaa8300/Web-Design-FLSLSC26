@@ -74,6 +74,7 @@ main {
     /* padding: 60px 20px; */
     border: 2px dashed #83d693;
     img {
+        object-fit: cover;
         border-radius: 12px;
     }
 }
@@ -138,7 +139,9 @@ footer {
     border: 2px dashed #999;
     margin-top: 2rem;
 }
-
+.infographic-placeholder img{
+    object-fit: cover;
+}
 .victories-section {
     max-width: 1200px;
     margin: 2rem auto;
