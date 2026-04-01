@@ -113,6 +113,134 @@ footer {
     margin-top: 4rem;
 }
 
+.about-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.about-card {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.infographic-placeholder {
+    background: #ddd;
+    border-radius: 12px;
+    padding: 60px 20px;
+    border: 2px dashed #999;
+    margin-top: 2rem;
+}
+
+.victories-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.victories-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1B4332;
+}
+
+.victory-card {
+    display: flex;
+    background: white;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.victory-image {
+    flex: 1;
+    max-height: 400px;
+}
+
+.victory-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.victory-content {
+    flex: 1.5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.victory-title {
+    color: #2EB67D;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.help-section {
+    display: flex;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.help-card {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.help-image-placeholder {
+    background: #ddd;
+    border-radius: 12px;
+    padding: 60px 20px;
+    border: 2px dashed #999;
+    margin-top: 10px;
+}
+
+.contact-form-container {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-input {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contact-textarea {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contact-button {
+    background: #2EB67D;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
 /* Responsive media queries */
 @media (max-width: 980px) {
     header {
@@ -137,6 +265,46 @@ footer {
     .hero-section .hero-content,
     .hero-section .hero-image-container {
         width: 100%;
+    }
+
+    .crisis-section {
+        padding: 2.5rem 1rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .victory-card {
+        flex-direction: column;
+    }
+
+    .help-section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-section {
+        padding: 2rem 0;
+    }
+
+    .hero-image-placeholder {
+        padding: 40px 16px;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        width: auto;
+    }
+
+    .crisis-section h2 {
+        font-size: 1.6rem;
     }
 
     .crisis-section {
@@ -170,5 +338,41 @@ footer {
     .crisis-section p {
         font-size: 1rem;
         line-height: 1.6;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .infographic-placeholder {
+        padding: 40px 16px;
+    }
+
+    .victory-card {
+        flex-direction: column;
+    }
+
+    .victory-image {
+        max-height: 300px;
+    }
+
+    .help-section {
+        flex-direction: column;
+    }
+
+    .help-image-placeholder {
+        padding: 40px 16px;
+    }
+
+    .contact-form-container {
+        padding: 1rem;
+    }
+
+    .contact-input, .contact-textarea {
+        padding: 8px;
+    }
+
+    .contact-button {
+        padding: 12px;
     }
 }
